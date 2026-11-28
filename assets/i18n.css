@@ -1,10 +1,8 @@
 /* Shared i18n styles: lightweight, non-intrusive */
 .i18n-switcher {
-  position: fixed;
-  top: 12px;
-  right: 12px;
-  z-index: 2147483647;
   display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
   gap: 6px;
   padding: 6px 8px;
   background: rgba(255,255,255,.86);
@@ -24,7 +22,7 @@
   cursor: pointer;
 }
 .i18n-switcher button:hover { background: rgba(0,0,0,.06); }
-.i18n-switcher button[aria-current="true"] {
+.i18n-switcher button[aria-pressed="true"] {
   background: #1955ff;
   color: #fff;
 }
